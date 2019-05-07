@@ -1,15 +1,18 @@
-<p>
-  <strong>Usuário:</strong>
-  <%= comment.commenter %>
-</p>
- 
-<p>
-  <strong>Comentário:</strong>
-  <%= comment.body %>
-</p>
 
-<p>
-  <%= link_to 'Apagar comentário', [comment.article, comment],
+<table class="table table-striped">
+	<p>
+  		<strong>Usuário:</strong>
+  		<%= comment.commenter %>
+	</p>
+ 	<p>
+  		<strong>Comentário:</strong>
+  		<%= comment.body %>
+  	</p>
+
+  		<%= link_to 'Apagar comentário', [comment.article, comment],
                method: :delete,
                data: { confirm: 'Você tem certeza?' } %>
-</p>
+    <p>
+	</p>	
+</table>
+

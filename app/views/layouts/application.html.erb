@@ -54,15 +54,23 @@
         <!--<a class="navbar-brand" href="#">Blog</a>-->
         <div class="navbar-collapse collapse navbar-responsive-collapse">
           <ul class="nav navbar-nav">
-            <li><%= link_to "Link1", "/path1"  %></li>
-            <li><%= link_to "Link2", "/path2"  %></li>
-            <li><%= link_to "Link3", "/path3"  %></li>
+            <li><%= link_to "Matérias 1", "/articles/1"  %></li>
+            <li><%= link_to "Matérias 2", "/articles/2"  %></li>
+            <li><%= link_to "Matérias 3", "/articles/3"  %></li>
           </ul>
         </div>
       </div>
     </div>
-    
 
+    <!--inicia o index da página-->
+    <%= bootstrap_flash %>
+    <%= yield %>
+
+
+
+<% if false %>
+comentário do if al end
+trecho de código para adicionar uma sidebar!
     <div class="container">
       <div class="row">
         <div class="col-lg-9">
@@ -78,15 +86,22 @@
               <li><%= link_to "Link2", "/path2"  %></li>
               <li><%= link_to "Link3", "/path3"  %></li>
             </ul>
-          </div><!--/.well -->
-        </div><!--/span-->
-      </div><!--/row-->
+          </div>
+        </div>      
+      </div>
+    </div>
+<% end %>
+    
 
-      <footer>
-        <p>&copy; Company 2019</p>
-      </footer>
-
-    </div> <!-- /container -->
+        <footer class="footer" id="footer_application">
+            <div class="container">
+                <br/>
+                <p style="text-align:center;">
+                    <strong>&copy; 2019 <a href="/index" target="_blank" onclick="javascript: return false">Blog do Hugo</a>.</strong> Desenvolvido por STW Online.
+                    <strong>Versão:</strong> 3
+                </p>
+            </div>
+        </footer>
 
   </body>
 </html>
